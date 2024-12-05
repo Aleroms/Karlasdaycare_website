@@ -1,8 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<template>
-  <div>Footer</div>
-</template>
-
 <script setup lang="ts"></script>
 
-<style scoped></style>
+<template>
+  footer
+  <font-awesome-icon :icon="['fas', 'user-secret']" />
+</template>

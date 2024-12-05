@@ -1,0 +1,29 @@
+.roboto-regular {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-regular-italic {
+  font-weight: 400;
+  font-style: italic;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: 'Roboto', serif;
+}
