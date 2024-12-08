@@ -2,7 +2,7 @@
 import Banner from '@/components/Banner.vue'
 import ContactComponent from '@/components/contact/ContactComponent.vue'
 import LocatedAt from '@/components/LocatedAt.vue'
-import AboutUs from '@/components/AboutUs.vue'
+import AboutUs from '@/components/about/AboutUs.vue'
 </script>
 
 <template>

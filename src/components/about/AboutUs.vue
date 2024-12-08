@@ -16,14 +16,16 @@
       </article>
     </div>
     <div class="about-item">
-      <ImageCarousel />
+      <ImageCarousel :images="images" :interval="5000" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import RoundedButton from './buttons/RoundedButton.vue'
-import ImageCarousel from './ImageCarousel.vue'
+import RoundedButton from '../buttons/RoundedButton.vue'
+import ImageCarousel from '../ImageCarousel.vue'
+
+const images = ['/banner/home.jpg', '/banner/home.jpg', '/banner/home.jpg', '/banner/home.jpg']
 </script>
 
 <style scoped>
