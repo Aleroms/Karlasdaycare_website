@@ -1,3 +1,3 @@
 <template>
-  <font-awesome-icon icon="fa-solid fa-copyright" />
+  <font-awesome-icon icon="fa-regular fa-copyright" />
 </template>

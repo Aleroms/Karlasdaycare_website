@@ -6,50 +6,62 @@
     </div>
     <div class="right" :class="{ hide: isMobile && !menuOpen }">
       <ul>
-        <li><RouterLink to="/">Home</RouterLink></li>
-        <li><RouterLink to="/about">About</RouterLink></li>
-        <li><RouterLink to="/contact">Contact</RouterLink></li>
+        <li>
+          <RouterLink to="/" class="nav-link" active-class="active-link">Home</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/about" class="nav-link" active-class="active-link">About</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/contact" class="nav-link" active-class="active-link">Contact</RouterLink>
+        </li>
       </ul>
     </div>
     <!-- Hamburger Menu Icon -->
     <div class="hamburger" v-if="isMobile" @click="toggleMenu">
-      <div :class="{ 'bar': true, 'open': menuOpen }"></div>
-      <div :class="{ 'bar': true, 'open': menuOpen }"></div>
-      <div :class="{ 'bar': true, 'open': menuOpen }"></div>
+      <div :class="{ bar: true, open: menuOpen }"></div>
+      <div :class="{ bar: true, open: menuOpen }"></div>
+      <div :class="{ bar: true, open: menuOpen }"></div>
     </div>
     <!-- Mobile Menu -->
     <div class="mobile-menu" v-if="menuOpen">
       <ul>
-        <li @click="toggleMenu"><RouterLink to="/">Home</RouterLink></li>
-        <li @click="toggleMenu"><RouterLink to="/about">About</RouterLink></li>
-        <li @click="toggleMenu"><RouterLink to="/contact">Contact</RouterLink></li>
+        <li @click="toggleMenu">
+          <RouterLink to="/" class="nav-link">Home</RouterLink>
+        </li>
+        <li @click="toggleMenu">
+          <RouterLink to="/about" class="nav-link">About</RouterLink>
+        </li>
+        <li @click="toggleMenu">
+          <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
+        </li>
       </ul>
     </div>
   </nav>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted } from 'vue'
 
-const isMobile = ref(window.innerWidth <= 380);
-const menuOpen = ref(false);
+const isMobile = ref(window.innerWidth <= 380)
+const menuOpen = ref(false)
 
 function updateIsMobile() {
-  isMobile.value = window.innerWidth <= 380;
-  if (!isMobile.value) menuOpen.value = false; // Close menu if switching to desktop
+  isMobile.value = window.innerWidth <= 380
+  if (!isMobile.value) menuOpen.value = false // Close menu if switching to desktop
 }
 
 function toggleMenu() {
-  menuOpen.value = !menuOpen.value;
+  menuOpen.value = !menuOpen.value
 }
 
 onMounted(() => {
-  window.addEventListener("resize", updateIsMobile);
-});
+  window.addEventListener('resize', updateIsMobile)
+})
 
 onUnmounted(() => {
-  window.removeEventListener("resize", updateIsMobile);
-});
+  window.removeEventListener('resize', updateIsMobile)
+})
 </script>
 
 <style scoped>
@@ -57,9 +69,11 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2rem;
+  margin: 2rem auto;
+  padding: 0 2rem;
   position: relative;
-  gap: 18px;
+  gap: 3rem;
+  max-width: 1400px;
 }
 
 .left p {
@@ -81,13 +95,22 @@ onUnmounted(() => {
   margin-right: 1rem;
 }
 
-.right li a {
+.nav-link {
   text-decoration: none;
   color: #007acc;
+  position: relative;
+  padding: 0.5rem 0;
 }
 
-.right li a:hover {
-  text-decoration: underline;
+.nav-link.active-link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #007acc;
 }
 
 .hamburger {
@@ -161,9 +184,10 @@ onUnmounted(() => {
     width: 100%;
   }
 }
-@media(max-width: 600px){
-  .left p {
-    font-size: 1rem;
+
+@media (min-width: 381px) {
+  .nav-link.active-link::after {
+    display: block;
   }
 }
 </style>

@@ -10,7 +10,9 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import IconCopyright from './icons/IconCopyright.vue'
+</script>
 
 <style scoped lang="scss">
 .santiagosites {
