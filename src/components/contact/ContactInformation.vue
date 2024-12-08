@@ -62,6 +62,7 @@ onUnmounted(() => {
 }
 .f-item {
   text-align: center;
+  width: 170px;
 }
 
 .f-item h4 {

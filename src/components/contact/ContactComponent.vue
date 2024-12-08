@@ -25,12 +25,9 @@ import ContactInformation from './ContactInformation.vue'
 </script>
 
 <style scoped lang="scss">
-.item {
-}
 .contact-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
   align-items: center;
   justify-content: center;
 }
@@ -47,17 +44,20 @@ import ContactInformation from './ContactInformation.vue'
 }
 .contact-info {
   width: 100%;
-  margin-bottom: 3rem;
+  padding: 3rem 0;
+  background-color: lavender;
 }
 @media (min-width: 600px) {
   .contact-container {
-    flex-direction: row;
-    align-items: start;
-    justify-content: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: lavender;
   }
   .contact-info {
-    width: clamp(300px, 40%, 800px);
-    padding: 2rem 0;
+    width: clamp(300px, 100%, 800px);
+    height: 100%;
+    padding: 3rem;
+    box-sizing: border-box;
   }
   .contact p {
     max-width: 70ch; /* Limits the width to approximately 50 characters */
