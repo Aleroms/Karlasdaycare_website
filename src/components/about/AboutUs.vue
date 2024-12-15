@@ -4,13 +4,13 @@
       <article class="about-us">
         <h2>About Us</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, earum, magni, maxime
-          debitis officiis dignissimos dolorem odit cumque velit veniam rerum pariatur perspiciatis
-          in ipsa dolore voluptates enim similique dicta doloribus. Maxime eligendi ipsam
-          reprehenderit labore, itaque voluptates eos, at iusto atque dolor officia repudiandae
-          corrupti fuga dicta. Eum, architecto? Dicta, magni blanditiis voluptas quos laboriosam eos
-          voluptates nostrum sunt officiis amet ut. Quis corrupti distinctio quam itaque ut magnam
-          accusantium minima, ea nostrum tempore cupiditate, quas sunt quae facilis?
+          Welcome to Karla's Children's Daycare, where your child’s growth, happiness, and safety
+          are our top priorities! With over 30 years of experience, we provide a nurturing,
+          bilingual environment that fosters learning through play, exploration, and creativity.
+          From wholesome meals prepared fresh daily to engaging educational activities, we’re
+          dedicated to helping children from infancy to kindergarten thrive. Ready to give your
+          little one the best start? Click below to learn more about our loving, family-focused
+          care!
         </p>
         <RoundedButton to="/about" class="btn">View More</RoundedButton>
       </article>

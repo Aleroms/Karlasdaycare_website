@@ -2,16 +2,24 @@
 <template>
   <div class="banner" :style="{ backgroundImage: `url('/${imagePath}')` }">
     <div class="banner-content">
-      <span class="highlight">{{ content }}</span>
+      <span class="highlight">
+        <div class="title">{{ title }}</div>
+        <div class="subtitle">{{ subtitle }}</div>
+      </span>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 defineProps({
-  content: {
+  title: {
     type: String,
     required: true,
+  },
+  subtitle: {
+    type: String,
+    required: false, // Subtitle is optional
+    default: '',
   },
   imagePath: {
     type: String,
@@ -35,21 +43,28 @@ defineProps({
 }
 
 .banner-content {
-  font-size: 2rem;
-  font-weight: bold;
   text-align: center; /* Centers text alignment */
-  padding: 1rem;
   z-index: 1; /* Ensures content is above the background */
+  background-color: white;
+  padding: 1rem 2rem; /* Adds spacing inside the box */
+  border-radius: 8px; /* Slightly rounds the corners */
 }
 
 .highlight {
-  background-color: white; /* Adds a white background */
-  padding: 0.5rem 1rem; /* Adds spacing inside the box */
-  border-radius: 8px; /* Slightly rounds the corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow for emphasis */
-  font-size: 2.5rem; /* Increases font size for emphasis */
   color: #333; /* Dark text for contrast */
   animation: attention 1s ease-out; /* Adds an attention-grabbing animation */
+}
+
+.title {
+  font-size: 2.5rem; /* Increases font size for the title */
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Adds spacing below the title */
+}
+
+.subtitle {
+  font-size: 1.5rem; /* Font size for the subtitle */
+  color: #555; /* Slightly lighter color for subtitle */
 }
 
 @keyframes attention {
@@ -68,8 +83,12 @@ defineProps({
     background-attachment: scroll; /* Fallback for mobile */
   }
 
-  .highlight {
-    font-size: 1.5rem; /* Adjust text size for smaller screens */
+  .title {
+    font-size: 1.8rem; /* Adjust title size for smaller screens */
+  }
+
+  .subtitle {
+    font-size: 1.2rem; /* Adjust subtitle size for smaller screens */
   }
 }
 </style>

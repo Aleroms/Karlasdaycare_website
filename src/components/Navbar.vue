@@ -2,7 +2,9 @@
 <template>
   <nav class="nav">
     <div class="left">
-      <p>Karla's Children's Daycare</p>
+      <RouterLink to="/" class="nav-link" active-class="active-link"
+        ><p>Karla's Children's Daycare</p></RouterLink
+      >
     </div>
     <div class="right" :class="{ hide: isMobile && !menuOpen }">
       <ul>
@@ -11,6 +13,9 @@
         </li>
         <li>
           <RouterLink to="/about" class="nav-link" active-class="active-link">About</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/gallery" class="nav-link" active-class="active-link">Gallery</RouterLink>
         </li>
         <li>
           <RouterLink to="/contact" class="nav-link" active-class="active-link">Contact</RouterLink>
@@ -27,10 +32,13 @@
     <div class="mobile-menu" v-if="menuOpen">
       <ul>
         <li @click="toggleMenu">
-          <RouterLink to="/" class="nav-link">Home</RouterLink>
+          <RouterLink to="/home" class="nav-link">Home</RouterLink>
         </li>
         <li @click="toggleMenu">
           <RouterLink to="/about" class="nav-link">About</RouterLink>
+        </li>
+        <li @click="toggleMenu">
+          <RouterLink to="/gallery" class="nav-link">Gallery</RouterLink>
         </li>
         <li @click="toggleMenu">
           <RouterLink to="/contact" class="nav-link">Contact</RouterLink>

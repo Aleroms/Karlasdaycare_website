@@ -3,15 +3,10 @@
     <div class="contact">
       <h2>Contact</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quae ducimus, corporis
-        amet, perferendis eligendi eaque explicabo quia ipsam iure rerum eum, placeat tempore
-        cupiditate earum pariatur impedit. Hic quasi aspernatur vitae necessitatibus deleniti. Ad,
-        expedita! Molestiae itaque accusantium eligendi vitae facilis illo ducimus beatae
-        dignissimos debitis ex deserunt accusamus dolorum enim officiis, culpa pariatur atque magni.
-        Debitis ut laborum quis. Iusto rem quis fugiat, cum dolorem corrupti unde porro totam
-        ratione, optio inventore natus aperiam exercitationem quos quae reprehenderit veniam.
-        Aspernatur quisquam, obcaecati cumque ipsum qui nobis ea, provident blanditiis eaque
-        consequatur ipsa aperiam incidunt! Culpa amet corporis facere!
+        Get in touch with Karla's Children's Daycare today! Whether you have questions about our
+        services, want to schedule a visit, or are ready to enroll your child, we’re here to help.
+        Our contact page includes everything you need, from our licensing information and payment
+        options to heartwarming testimonials from families who trust us with their little ones.
       </p>
     </div>
     <div class="contact-info">
@@ -32,6 +27,8 @@ import ContactInformation from './ContactInformation.vue'
   justify-content: center;
 }
 .contact {
+  height: 100%;
+  box-sizing: border-box;
   padding: 3rem 1.6rem;
   line-height: 1.6rem;
   background-color: #444;
@@ -56,15 +53,11 @@ import ContactInformation from './ContactInformation.vue'
   .contact-info {
     width: clamp(300px, 100%, 800px);
     height: 100%;
-    padding: 3rem;
+    padding: 1.625em 3rem;
     box-sizing: border-box;
   }
   .contact p {
     max-width: 70ch; /* Limits the width to approximately 50 characters */
-  }
-  .contact {
-    padding: clamp(1rem, 5%, 3rem);
-
   }
 }
 </style>
