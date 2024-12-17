@@ -6,6 +6,7 @@ import AboutUs from '@/components/about/AboutUs.vue'
 import TestimonialTabs from '@/components/testimonials/TestimonialTabs.vue'
 import ActivitiesSchedule from '@/components/activities/ActivitiesSchedule.vue'
 import ContactCTA from '@/components/contact/ContactCTA.vue'
+import MealsInfo from '@/components/MealsInfo.vue'
 
 const title = "Karla's Children's Daycare"
 const subtitle = 'Where Learning, Care, and Family meet'
@@ -19,6 +20,7 @@ const imagePath = 'banner/home.jpg'
     <TestimonialTabs />
     <LocatedAt />
     <ActivitiesSchedule />
+    <MealsInfo />
     <!-- <ContactComponent /> -->
     <ContactCTA />
   </main>

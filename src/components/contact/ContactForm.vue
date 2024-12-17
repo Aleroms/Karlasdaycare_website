@@ -107,7 +107,7 @@ const resetForm = () => {
 <style scoped>
 .contact-form {
   max-width: 600px;
-  margin: 2rem auto;
+  margin: 6rem auto;
   padding: 2rem;
   background-color: #f9f9f9;
   border-radius: 8px;
