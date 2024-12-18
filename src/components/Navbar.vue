@@ -51,11 +51,11 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 
-const isMobile = ref(window.innerWidth <= 380)
+const isMobile = ref(window.innerWidth <= 600)
 const menuOpen = ref(false)
 
 function updateIsMobile() {
-  isMobile.value = window.innerWidth <= 380
+  isMobile.value = window.innerWidth <= 600
   if (!isMobile.value) menuOpen.value = false // Close menu if switching to desktop
 }
 
