@@ -179,7 +179,7 @@ onUnmounted(() => {
   margin-bottom: 0;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 600px) {
   .right {
     display: none;
   }
@@ -193,7 +193,7 @@ onUnmounted(() => {
   }
 }
 
-@media (min-width: 381px) {
+@media (min-width: 600px) {
   .nav-link.active-link::after {
     display: block;
   }
