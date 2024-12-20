@@ -1,49 +1,55 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <nav class="nav">
-    <div class="left">
-      <RouterLink to="/" class="nav-link" active-class="active-link"
-        ><p>Karla's Children's Daycare</p></RouterLink
-      >
-    </div>
-    <div class="right" :class="{ hide: isMobile && !menuOpen }">
-      <ul>
-        <li>
-          <RouterLink to="/" class="nav-link" active-class="active-link">Home</RouterLink>
-        </li>
-        <li>
-          <RouterLink to="/about" class="nav-link" active-class="active-link">About</RouterLink>
-        </li>
-        <li>
-          <RouterLink to="/gallery" class="nav-link" active-class="active-link">Gallery</RouterLink>
-        </li>
-        <li>
-          <RouterLink to="/contact" class="nav-link" active-class="active-link">Contact</RouterLink>
-        </li>
-      </ul>
-    </div>
-    <!-- Hamburger Menu Icon -->
-    <div class="hamburger" v-if="isMobile" @click="toggleMenu">
-      <div :class="{ bar: true, open: menuOpen }"></div>
-      <div :class="{ bar: true, open: menuOpen }"></div>
-      <div :class="{ bar: true, open: menuOpen }"></div>
-    </div>
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" v-if="menuOpen">
-      <ul>
-        <li @click="toggleMenu">
-          <RouterLink to="/home" class="nav-link">Home</RouterLink>
-        </li>
-        <li @click="toggleMenu">
-          <RouterLink to="/about" class="nav-link">About</RouterLink>
-        </li>
-        <li @click="toggleMenu">
-          <RouterLink to="/gallery" class="nav-link">Gallery</RouterLink>
-        </li>
-        <li @click="toggleMenu">
-          <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
-        </li>
-      </ul>
+  <nav class="nav-wrapper">
+    <div class="nav">
+      <div class="left">
+        <RouterLink to="/" class="nav-link" active-class="active-link"
+          ><p>Karla's Children's Daycare</p></RouterLink
+        >
+      </div>
+      <div class="right" :class="{ hide: isMobile && !menuOpen }">
+        <ul>
+          <li>
+            <RouterLink to="/" class="nav-link" active-class="active-link">Home</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/about" class="nav-link" active-class="active-link">About</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/gallery" class="nav-link" active-class="active-link"
+              >Gallery</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink to="/contact" class="nav-link" active-class="active-link"
+              >Contact</RouterLink
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Hamburger Menu Icon -->
+      <div class="hamburger" v-if="isMobile" @click="toggleMenu">
+        <div :class="{ bar: true, open: menuOpen }"></div>
+        <div :class="{ bar: true, open: menuOpen }"></div>
+        <div :class="{ bar: true, open: menuOpen }"></div>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" v-if="menuOpen">
+        <ul>
+          <li @click="toggleMenu">
+            <RouterLink to="/home" class="nav-link">Home</RouterLink>
+          </li>
+          <li @click="toggleMenu">
+            <RouterLink to="/about" class="nav-link">About</RouterLink>
+          </li>
+          <li @click="toggleMenu">
+            <RouterLink to="/gallery" class="nav-link">Gallery</RouterLink>
+          </li>
+          <li @click="toggleMenu">
+            <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </template>
@@ -73,22 +79,26 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-
+.nav-wrapper {
+  background-color: var(--kd-blue);
+}
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2rem auto;
+  margin: 0 auto;
   padding: 0 2rem;
   position: relative;
   gap: 3rem;
   max-width: 1400px;
+
+  height: 80px;
 }
 
 .left p {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: white;
 }
 
 .right ul {
@@ -106,7 +116,7 @@ onUnmounted(() => {
 
 .nav-link {
   text-decoration: none;
-  color: #007acc;
+  color: white;
   position: relative;
   padding: 0.5rem 0;
 }
@@ -119,7 +129,7 @@ onUnmounted(() => {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #007acc;
+  background-color: white;
 }
 
 .hamburger {
@@ -134,7 +144,7 @@ onUnmounted(() => {
 .hamburger .bar {
   width: 100%;
   height: 4px;
-  background-color: #007acc;
+  background-color: white;
   border-radius: 5px;
   transition: transform 0.3s ease;
 }

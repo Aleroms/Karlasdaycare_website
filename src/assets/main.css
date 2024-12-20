@@ -1,3 +1,7 @@
+:root {
+  --kd-blue: #007bff;
+  --kd-light-blue: #5dcfff;
+}
 .roboto-regular {
   font-weight: 400;
   font-style: normal;
@@ -29,7 +33,7 @@ a {
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 @media (min-width: 600px) {

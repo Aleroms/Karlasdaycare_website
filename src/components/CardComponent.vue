@@ -20,15 +20,13 @@ defineProps({
   },
   color: {
     type: String,
-    default: '#333',
+    default: '#F5F5F5',
   },
 })
 </script>
 
 <style scoped lang="scss">
-.card-container {
-  color: white;
-}
+
 .card {
   padding: 2rem 1rem;
   max-width: 800px;

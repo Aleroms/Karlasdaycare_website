@@ -8,10 +8,16 @@
     </p>
     <!-- Tabs Navigation -->
     <div class="tabs-nav">
-      <button
+      <!-- <button
         v-for="(testimonial, index) in testimonials"
         :key="index"
         :class="{ active: index === activeTab }"
+        @click="activeTab = index"
+      > -->
+      <button
+        v-for="(testimonial, index) in testimonials"
+        :key="index"
+        :class="changeTabColor(index)"
         @click="activeTab = index"
       >
         {{ testimonial.name }}
@@ -40,6 +46,22 @@ const testimonials = TESTIMONIALS
 
 // Reactive variable for active tab index
 const activeTab = ref(0)
+
+function changeTabColor(index: number) {
+  if (index === activeTab.value) {
+    switch (index) {
+      case 0:
+        return 'active1'
+      case 1:
+        return 'active2'
+      case 2:
+        return 'active3'
+      case 3:
+        return 'active4'
+    }
+  }
+  return ''
+}
 </script>
 
 <style scoped>
@@ -76,9 +98,27 @@ p {
   transition: background-color 0.3s;
 }
 
-.tabs-nav button.active {
+.tabs-nav button.active1 {
   background-color: #007bff;
   color: white;
+  font-weight: bold;
+}
+
+.tabs-nav button.active2 {
+  background-color: #28a745;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.tabs-nav button.active3 {
+  background-color: #ffc107;
+  color: #000000;
+  font-weight: bold;
+}
+
+.tabs-nav button.active4 {
+  background-color: #dc3545;
+  color: #ffffff;
   font-weight: bold;
 }
 

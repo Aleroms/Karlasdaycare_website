@@ -72,6 +72,9 @@ const body = [
   line-height: 1.6;
   margin-bottom: 16px;
 }
+.about-me-container{
+  margin-top: 8rem;
+}
 
 /* Responsive design */
 @media (min-width: 768px) {

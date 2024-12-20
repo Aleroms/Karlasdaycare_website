@@ -29,31 +29,31 @@ import { ref } from 'vue'
 
 const activities = [
   {
-    title: 'Educational Activities',
+    title: 'Educational Activities 📚✏️🧩',
     description:
       'Children engage in 45-minute blocks of play-based and hands-on learning activities. These are designed to develop essential skills such as critical thinking, socialization, and creativity, preparing them for preschool and kindergarten.',
     image: 'activities/educational.jpg',
   },
   {
-    title: 'Nap Time',
+    title: 'Nap Time 🛏️🌙😴',
     description:
       'After an exciting morning, children have a daily rest period of 1.5-2 hours. This quiet time ensures they recharge and maintain a healthy balance of activity and rest.',
     image: 'activities/naptime.jpg',
   },
   {
-    title: 'Outdoor Activities',
+    title: 'Outdoor Activities 🌳☀️🏃‍♀️',
     description:
       'Trips to nearby parks or age-appropriate movie outings (with parental consent) provide children with opportunities to explore, build friendships, and enjoy physical activities in a safe environment.',
     image: 'googlemaps/address.png',
   },
   {
-    title: 'Birthday Celebrations',
+    title: 'Birthday Celebrations 🎂🎈🎉',
     description:
       'We make birthdays memorable with personalized celebrations. Each child’s special day is filled with laughter, treats, and fun activities to make them feel loved and appreciated.',
     image: 'googlemaps/address.png',
   },
   {
-    title: 'Yearly Parent-Child Gathering',
+    title: 'Yearly Parent-Child Gathering 👩‍👦🤝👨‍👧',
     description:
       'An annual event where children and parents come together for an afternoon of fun, games, and bonding. This is a wonderful opportunity for parents to connect and build a sense of community within the daycare.',
     image: 'googlemaps/address.png',
@@ -70,8 +70,7 @@ const toggleAccordion = (index: number) => {
 
 <style scoped>
 .activities-accordion {
-  background-color: #333; /* Dark background */
-  color: #fff; /* White text for contrast */
+  background-color: #f5f5f5; /* Dark background */
   width: 100%; /* Full-width layout */
   padding: 6rem;
   box-sizing: border-box;
@@ -81,7 +80,6 @@ const toggleAccordion = (index: number) => {
 h2 {
   text-align: center;
   font-size: 2rem;
-  color: white; /* Highlighted yellow for header */
   margin-bottom: 2rem;
 }
 
@@ -101,29 +99,29 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #444;
+  background-color: #a6a2a2;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .accordion-header:hover {
-  background-color: #555;
+  background-color: #847577;
 }
 
 .accordion-header h3 {
   margin: 0;
   font-size: 1.5rem;
-  color: wheat; /* Orange for section titles */
+  color: #fbfbf2;
 }
 
 .toggle-icon {
   font-size: 1.5rem;
-  color: #007bff;
+  color: #fbfbf2;
 }
 
 .accordion-content {
   padding: 1rem;
-  background-color: #222;
+  background-color: #e5e6e4;
   display: flex;
   gap: 1rem;
   flex-direction: row;
@@ -139,7 +137,7 @@ h2 {
   margin: 0;
   font-size: 1rem;
   line-height: 1.6;
-  color: #ccc;
+  color: black;
 }
 
 @media (max-width: 768px) {
