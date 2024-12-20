@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import Gallery from '@/components/gallery.vue'
+import Gallery from '@/components/Gallery.vue'
 </script>
 
 <style scoped></style>
