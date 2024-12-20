@@ -32,13 +32,13 @@ const activities = [
     title: 'Educational Activities',
     description:
       'Children engage in 45-minute blocks of play-based and hands-on learning activities. These are designed to develop essential skills such as critical thinking, socialization, and creativity, preparing them for preschool and kindergarten.',
-    image: 'googlemaps/address.png',
+    image: 'activities/educational.jpg',
   },
   {
     title: 'Nap Time',
     description:
       'After an exciting morning, children have a daily rest period of 1.5-2 hours. This quiet time ensures they recharge and maintain a healthy balance of activity and rest.',
-    image: 'googlemaps/address.png',
+    image: 'activities/naptime.jpg',
   },
   {
     title: 'Outdoor Activities',

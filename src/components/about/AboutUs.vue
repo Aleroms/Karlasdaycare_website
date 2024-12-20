@@ -25,7 +25,12 @@
 import RoundedButton from '../buttons/RoundedButton.vue'
 import ImageCarousel from '../ImageCarousel.vue'
 
-const images = ['/banner/home.jpg', '/banner/home.jpg', '/banner/home.jpg', '/banner/home.jpg']
+const images = [
+  '/other/mats.jpg',
+  '/activities/educational.jpg',
+  '/banner/home2.jpg',
+  '/banner/home1.jpg',
+]
 </script>
 
 <style scoped>
@@ -35,8 +40,9 @@ const images = ['/banner/home.jpg', '/banner/home.jpg', '/banner/home.jpg', '/ba
 .about-container {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  background-color: #444;
+  background: radial-gradient(circle at bottom left, #397A8E, #1A465F);
   color: white;
+  margin: 1rem;
 }
 .about-us {
   margin: 1rem;

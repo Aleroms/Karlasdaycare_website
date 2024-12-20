@@ -73,6 +73,7 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+
 .nav {
   display: flex;
   align-items: center;

@@ -1,7 +1,7 @@
 <template>
   <div class="about-me-container">
     <div class="image-wrapper">
-      <img src="/profile-picture.png" alt="profile picture" />
+      <img src="/about/karla.jpg" alt="profile picture" />
     </div>
     <article class="about-text">
       <h2>About Me</h2>
@@ -37,8 +37,8 @@ const body = [
 
 /* Image styling */
 .image-wrapper img {
-  width: 100%;
-  max-width: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

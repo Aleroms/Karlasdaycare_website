@@ -2,11 +2,11 @@
   <Banner
     title="Karla's Children's Daycare"
     subtitle="we'd love to hear more from you"
-    image-path="banner/home.jpg"
+    image-path="banner/home2.jpg"
   />
   <InformationComponent />
   <TestimonialTabs />
-  
+
   <ContactForm />
   <!-- <ContactComponent /> -->
 </template>
