@@ -25,6 +25,11 @@ const router = createRouter({
       name: 'galery',
       component: () => import('@/views/GalleryView.vue'),
     },
+    {
+      path: '/:pathMatch(.*)*', // Matches all undefined routes
+      name: 'NotFound',
+      component: () => import('@/components/NotFound.vue'),
+    },
   ],
 })
 

@@ -47,7 +47,7 @@
 
 <style scoped>
 .meals-container {
-  background-image: url('/public/banner/blurry.jpg');
+  background-image: url('/banner/blurry.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

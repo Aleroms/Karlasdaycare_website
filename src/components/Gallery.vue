@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="gallery-page">
     <h2>Our Gallery</h2>

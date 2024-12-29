@@ -2,12 +2,12 @@
   <div class="not-found">
     <h1>404</h1>
     <p>Oops! The page you are looking for does not exist.</p>
-    <RouterLink to="/" class="home-link">Go Back Home</RouterLink>
+    <RoundedButton to="/" color="danger">Go Home</RoundedButton>
   </div>
 </template>
 
 <script setup lang="ts">
-
+import RoundedButton from './buttons/RoundedButton.vue'
 </script>
 
 <style scoped>
@@ -16,8 +16,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #333; /* Dark background */
+  height: 80vh;
+  background-image: url('banner/blurry.jpg');
   color: #fff; /* White text for contrast */
   text-align: center;
 }
@@ -25,7 +25,7 @@
 h1 {
   font-size: 6rem;
   margin-bottom: 1rem;
-  color: #f1c40f; /* Highlighted yellow for the 404 */
+  color: white; /* Highlighted yellow for the 404 */
 }
 
 p {
