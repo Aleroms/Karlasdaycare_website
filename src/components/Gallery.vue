@@ -9,7 +9,7 @@
         class="gallery-item"
         @click="openModal(image)"
       >
-        <img :src="image.src" :alt="image.alt" />
+        <img :src="image.src" :alt="image.alt" loading="lazy"/>
       </div>
     </div>
 
@@ -26,6 +26,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import GALLERY from '@/assets/data/gallery.json'
 
 // Define an interface for the image objects
 interface Image {
@@ -33,32 +34,7 @@ interface Image {
   alt: string // Description of the image
 }
 
-const images: Image[] = [
-  {
-    src: 'googlemaps/address.png',
-    alt: 'Children playing and learning together',
-  },
-  {
-    src: 'googlemaps/address.png',
-    alt: 'Outdoor activities in the park',
-  },
-  {
-    src: 'googlemaps/address.png',
-    alt: 'Birthday celebration at the daycare',
-  },
-  {
-    src: 'googlemaps/address.png',
-    alt: 'Educational activities with the kids',
-  },
-  {
-    src: 'googlemaps/address.png',
-    alt: 'Parent-child gathering event',
-  },
-  {
-    src: 'googlemaps/address.png',
-    alt: 'Art and craft time at the daycare',
-  },
-]
+const images: Image[] = GALLERY
 
 // Reactive state for the modal
 const selectedImage = ref<Image | null>(null)
@@ -80,7 +56,7 @@ const closeModal = () => {
   color: #333; /* Dark text */
   padding: 2rem;
   text-align: center;
-padding: 8rem 0;
+  padding: 8rem 0;
 }
 
 h2 {
@@ -111,6 +87,7 @@ p {
     transform 0.3s ease,
     box-shadow 0.3s ease;
   cursor: pointer;
+  padding: 1rem;
 }
 
 .gallery-item img {
@@ -142,15 +119,15 @@ p {
   background-color: #fff;
   padding: 1rem;
   border-radius: 8px;
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 50%;
+  max-height: 50%;
   text-align: center;
   position: relative;
 }
 
 .modal-content img {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height:400px;
   border-radius: 8px;
   margin-bottom: 1rem;
 }

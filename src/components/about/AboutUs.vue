@@ -28,8 +28,10 @@ import ImageCarousel from '../ImageCarousel.vue'
 const images = [
   '/other/mats.jpg',
   '/activities/educational.jpg',
+  '/activities/activity6.jpg',
   '/banner/home2.jpg',
-  '/banner/home1.jpg',
+  '/event/event.jpg',
+  '/activities/activity.jpg',
 ]
 </script>
 
@@ -40,7 +42,7 @@ const images = [
 .about-container {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  background: radial-gradient(circle at bottom left, #397A8E, #1A465F);
+  background: radial-gradient(circle at bottom left, #397a8e, #1a465f);
   color: white;
   margin: 1rem;
 }

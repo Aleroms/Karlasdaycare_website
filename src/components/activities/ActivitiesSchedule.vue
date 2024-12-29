@@ -44,19 +44,19 @@ const activities = [
     title: 'Outdoor Activities 🌳☀️🏃‍♀️',
     description:
       'Trips to nearby parks or age-appropriate movie outings (with parental consent) provide children with opportunities to explore, build friendships, and enjoy physical activities in a safe environment.',
-    image: 'googlemaps/address.png',
+    image: 'event/event3.jpg',
   },
   {
     title: 'Birthday Celebrations 🎂🎈🎉',
     description:
       'We make birthdays memorable with personalized celebrations. Each child’s special day is filled with laughter, treats, and fun activities to make them feel loved and appreciated.',
-    image: 'googlemaps/address.png',
+    image: 'birthday/birthday.jpg',
   },
   {
     title: 'Yearly Parent-Child Gathering 👩‍👦🤝👨‍👧',
     description:
       'An annual event where children and parents come together for an afternoon of fun, games, and bonding. This is a wonderful opportunity for parents to connect and build a sense of community within the daycare.',
-    image: 'googlemaps/address.png',
+    image: 'event/event6.jpg',
   },
 ]
 
