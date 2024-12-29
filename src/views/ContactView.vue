@@ -8,7 +8,7 @@
   <TestimonialTabs />
 
   <ContactForm />
-  <!-- <ContactComponent /> -->
+  
 </template>
 
 <script setup lang="ts">

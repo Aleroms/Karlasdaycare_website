@@ -2,10 +2,10 @@
   <div class="contact-form">
     <h2>Contact Us</h2>
     <p>
-      Have questions or want to learn more? Fill out the form below, and we'll get back to you as
-      soon as possible!
+      Have questions or want to learn more? Please send an email to
+      <a :href="`mailto:${contactEmail}`">{{ contactEmail }}</a>
     </p>
-    <form @submit.prevent="handleSubmit">
+    <!-- <form @submit.prevent="handleSubmit">
       <div class="form-group">
         <label for="name">Name</label>
         <input
@@ -42,12 +42,13 @@
       </div>
 
       <button type="submit" class="submit-button">Send Message</button>
-    </form>
+    </form> -->
   </div>
 </template>
 
 <script setup lang="ts">
 import { reactive } from 'vue'
+const contactEmail = 'osito92630@gmail.com'
 
 // Define the structure of the form data
 interface FormData {

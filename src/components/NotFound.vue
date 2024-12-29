@@ -18,6 +18,8 @@ import RoundedButton from './buttons/RoundedButton.vue'
   align-items: center;
   height: 80vh;
   background-image: url('banner/blurry.jpg');
+  background-position: center;
+  background-size: cover;
   color: #fff; /* White text for contrast */
   text-align: center;
 }
