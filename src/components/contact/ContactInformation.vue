@@ -17,7 +17,7 @@
     <div class="f-item">
       <h4>Address</h4>
       <hr />
-      <p>Lake Forest, CA</p>
+      <p>21391 Arborwood, Lake Forest, CA 92630</p>
     </div>
   </div>
 </template>
@@ -26,7 +26,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import IconGroup from '../icons/IconGroup.vue'
 
-const iconList = ['facebook', 'instagram', 'whatsapp']
+const iconList = ['facebook', 'instagram', 'whatsapp', 'yelp']
 
 defineProps({
   flexDirection: {

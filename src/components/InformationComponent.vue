@@ -10,7 +10,7 @@
       <h3>License Information</h3>
       <p>
         We are a fully licensed daycare, ensuring the highest standards of safety, care, and
-        education for your child.
+        education for your child. Feel free to reach out if you would like to verify our license.
       </p>
     </div>
 
@@ -32,8 +32,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
 .information {

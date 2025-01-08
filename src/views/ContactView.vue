@@ -6,9 +6,8 @@
   />
   <InformationComponent />
   <TestimonialTabs />
-
   <ContactForm />
-  
+
 </template>
 
 <script setup lang="ts">
