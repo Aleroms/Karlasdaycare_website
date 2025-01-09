@@ -1,10 +1,11 @@
 <template>
   <div class="contact-form">
-    <h2>Contact Us</h2>
+    <h2>Contact Karla</h2>
     <IconGroup :icon-names="iconList" />
     <p>
       Have questions or want to learn more? Please send an email to
-      <a :href="`mailto:${contactEmail}`">{{ contactEmail }}</a>
+      <a :href="`mailto:${contactEmail}`">{{ contactEmail }}</a> or feel free to call me at
+      <b>{{ phoneNumber }}</b>
     </p>
   </div>
 </template>
@@ -12,7 +13,8 @@
 <script setup lang="ts">
 import IconGroup from '@/components/icons/IconGroup.vue'
 const contactEmail = 'osito92630@gmail.com'
-const iconList = ['facebook', 'instagram', 'whatsapp', 'yelp']
+const iconList = ['facebook', 'instagram', 'whatsapp', 'yelp', 'tiktok']
+const phoneNumber = '(949) 697-7329'
 </script>
 
 <style scoped>

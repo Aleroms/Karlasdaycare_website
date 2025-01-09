@@ -17,6 +17,7 @@ import IconFacebook from '@/components/icons/IconFacebook.vue'
 import IconWhatsapp from '@/components/icons/IconWhatsapp.vue'
 import IconInstagram from '@/components/icons/IconInstagram.vue'
 import IconYelp from '@/components/icons/IconYelp.vue'
+import IconTikTok from './iconTikTok.vue'
 
 // Define props
 defineProps<{
@@ -29,6 +30,7 @@ const iconComponents: Record<string, unknown> = {
   whatsapp: IconWhatsapp,
   instagram: IconInstagram,
   yelp: IconYelp,
+  tiktok: IconTikTok,
 }
 </script>
 

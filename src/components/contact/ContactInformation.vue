@@ -26,7 +26,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import IconGroup from '../icons/IconGroup.vue'
 
-const iconList = ['facebook', 'instagram', 'whatsapp', 'yelp']
+const iconList = ['facebook', 'instagram', 'whatsapp', 'yelp', 'tiktok']
 
 defineProps({
   flexDirection: {

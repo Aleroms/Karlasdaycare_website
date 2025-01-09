@@ -26,9 +26,10 @@ import RoundedButton from '../buttons/RoundedButton.vue'
 import ImageCarousel from '../ImageCarousel.vue'
 
 const images = [
+  '/gallery/activity36.jpg',
   '/other/mats.jpg',
   '/activities/educational.jpg',
-  '/activities/activity6.jpg',
+  '/gallery/activity6.jpg',
   '/banner/home2.jpg',
   '/event/event.jpg',
   '/activities/activity.jpg',

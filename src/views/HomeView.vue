@@ -7,7 +7,6 @@ import ActivitiesSchedule from '@/components/activities/ActivitiesSchedule.vue'
 import MealsInfo from '@/components/MealsInfo.vue'
 import CallToAction from '@/components/CallToAction.vue'
 
-
 const title = "Karla's Children's Daycare"
 const subtitle = 'Where Learning, Care, and Family meet'
 const imagePath = 'banner/home1.jpg'
