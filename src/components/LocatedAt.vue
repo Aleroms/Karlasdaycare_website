@@ -3,7 +3,7 @@
     <div class="locatedAt">
       <h2>Located At</h2>
       <p>We are located at <a :href="url">21391 arborwood</a>, Lake Forest</p>
-      <img src="/googlemaps/address.png" alt="lake forest" />
+      <img src="/googlemaps/address.png" alt="lake forest" loading="lazy" />
       <ExternalLinkButton :href="url">Get Directions</ExternalLinkButton>
     </div>
   </div>

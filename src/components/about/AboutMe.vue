@@ -1,7 +1,7 @@
 <template>
   <div class="about-me-container">
     <div class="image-wrapper">
-      <img src="/about/karla.jpg" alt="profile picture" />
+      <img src="/about/karla.jpg" alt="profile picture" loading="eager" />
     </div>
     <article class="about-text">
       <h2>About Me</h2>
@@ -72,7 +72,7 @@ const body = [
   line-height: 1.6;
   margin-bottom: 16px;
 }
-.about-me-container{
+.about-me-container {
   margin-top: 8rem;
 }
 

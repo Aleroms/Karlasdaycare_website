@@ -15,7 +15,7 @@
         <!-- Accordion Content -->
         <div class="accordion-content" v-show="expandedIndex === index">
           <div class="activity-image">
-            <img :src="activity.image" :alt="activity.title" />
+            <img :src="activity.image" :alt="activity.title" loading="lazy" />
           </div>
           <p>{{ activity.description }}</p>
         </div>
