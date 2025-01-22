@@ -1,6 +1,6 @@
 <template>
   <a
-    href="https://www.instagram.com/duenezk?fbclid=IwY2xjawHBse1leHRuA2FlbQIxMAABHetZk8q8OIDine-4jI0FK_H-DuJl94hbFS6kYsicbul9LKl3oPwED9jJBQ_aem_LJ6miRpRQPu1581d1Aln3g"
+    href="https://www.instagram.com/karlaschildrens?igsh=dTl1djVxZjZyemRq&utm_source=qr"
     target="_blank"
     aria-label="instagram"
     class="icon"
