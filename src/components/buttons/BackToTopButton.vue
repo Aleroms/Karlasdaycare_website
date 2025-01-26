@@ -13,7 +13,6 @@ const scrollLimit = 800
 const backToTop = ref('')
 
 function handleScroll() {
-  console.log(backToTop.value, window.scrollY)
   backToTop.value = window.scrollY < scrollLimit ? 'hidden' : ''
 }
 function scrollToTop() {
