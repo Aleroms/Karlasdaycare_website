@@ -2,7 +2,7 @@
 <template>
   <div class="santiagosites">
     <p>
-      Karla's Children's Childcare
+      Karla's Children's Daycare
       <IconCopyright />
       | Designed by
       <b><a href="https://santiagomorales.dev/">SantiagoSites</a></b>
