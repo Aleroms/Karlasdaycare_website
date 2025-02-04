@@ -10,7 +10,9 @@
       <h3>License Information</h3>
       <p>
         We are a fully licensed daycare, ensuring the highest standards of safety, care, and
-        education for your child. Feel free to reach out if you would like to verify our license.
+        education for your child. Our license number is
+        <strong>{{ licenseNumber }}</strong
+        >, giving you peace of mind knowing your child is in a trusted and certified environment.
       </p>
     </div>
 
@@ -32,7 +34,9 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const licenseNumber = '#304206439'
+</script>
 
 <style scoped>
 .information {
